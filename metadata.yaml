@@ -1,0 +1,12 @@
+name: astrbot_plugin_qqadmin
+display_name: QQ群管
+desc: "OneBot 群管与 QQ 官方群管适配；官方成员禁言、踢人、黑名单、成员查询及手动入群审批需要平台接口权限和机器人群管理员身份。"
+help: 略
+version: v3.4.1
+author: Zhalslar
+repo: https://github.com/wzq10314/astrbot_plugin_qqadmin
+support_platforms:
+  - aiocqhttp
+  - qq_official
+  - qq_official_webhook
+astrbot_version: ">=4.24.2"

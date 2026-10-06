@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>QQ群管配置</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <div class="page-shell">
+        <section class="workspace-shell">
+            <div class="workspace-grid">
+                <aside id="groupListPanel" class="group-list-panel">
+                    <div class="toolbar-stack">
+                        <div class="workspace-actions">
+                            <div class="workspace-status">
+                                <button class="ghost-button" id="toggleThemeBtn">主题：自动</button>
+                                <button class="ghost-button" id="refreshGroupsBtn">同步群列表</button>
+                            </div>
+                        </div>
+                        <label class="toolbar-field grow">
+                            <input id="groupSearchInput" type="search" placeholder="输入群名或群号筛选" aria-label="搜索群" />
+                        </label>
+                    </div>
+
+                    <div class="list-meta-row">
+                        <span id="groupListCount">0 个群</span>
+                    </div>
+
+                    <div id="groupList" class="group-list empty-state">
+                        群列表加载后会显示在这里。
+                    </div>
+                </aside>
+
+                <section id="groupDetailPanel" class="group-detail-panel">
+                    <h3 id="currentGroupName" class="detail-page-title">未选择群</h3>
+                    <div id="groupDetailContent" class="detail-stack">
+                        <div id="groupForm" class="form-stack"></div>
+
+                        <div class="sticky-actions">
+                            <button class="ghost-button" id="resetGroupBtn">恢复当前项默认值</button>
+                            <button class="primary-button" id="saveGroupBtn">保存当前项配置</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </div>
+
+    <div class="toast-layer" id="toastLayer"></div>
+    <script type="module" src="./app.js"></script>
+</body>
+</html>
